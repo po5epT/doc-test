@@ -1,0 +1,91 @@
+.item
+.sub-item
+  margin-top -1px
+  background-color white
+  transition transform 0.25s cubic-bezier(0.02, 1.01, 0.94, 1.01)
+  will-change transform
+
+.item__inner
+.sub-item__inner
+  display grid
+  align-items center
+  flex 1 0 auto
+  padding 0 6px 0 16px
+  border 1px solid $grey
+
+.item
+  display flex
+  flex-direction column
+  max-height 48px
+  overflow hidden
+  transition max-height 300ms
+
+  &_detached
+    padding-top 20px
+    margin-top 0
+
+  &_expanded
+    max-height 500px
+    overflow auto
+    transition max-height 300ms
+
+  &__inner
+    grid-template-rows 46px
+    grid-template-columns 32px auto 1fr auto
+
+  &__expand
+    place-self center
+    color $dark-blue
+
+  &__label
+  &__description
+  &__controls
+    margin-left 16px
+
+  &__label
+    font-size 15px
+    line-height 16px
+    font-weight 500
+
+  &__description
+    font-size 11px
+    line-height 12px
+    color $muted
+
+  &__sub-items
+    margin-left 16px
+
+    &_detached
+      margin-left 0
+
+.sub-item
+  height 30px
+
+  &__inner
+    grid-template-rows 28px
+    grid-template-columns auto auto 1fr auto
+
+  &__requirement
+  &__description
+  &__controls
+    margin-left 16px
+
+  &__label
+    font-size 13px
+    line-height 14px
+
+  &__requirement
+  &__description
+    font-size 11px
+    line-height 12px
+
+  &__requirement
+    color $red
+
+  &__description
+    color $muted
+
+.item.sortable-chosen
+.sub-item.sortable-chosen
+  box-shadow 0 3px 16px rgba(0, 102, 255, 0.7)
+

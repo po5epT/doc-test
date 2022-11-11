@@ -1,0 +1,39 @@
+.label
+  display flex
+  position relative
+
+.input
+  display block
+  border 0
+  border-bottom 1px solid $muted
+  height 30px
+  line-height 16px
+  font-size 15px
+  padding 5px 12px
+  flex 1 1 auto
+
+  &_has-icon-left
+    padding-left 30px
+
+  &_has-icon-right
+    padding-right 30px
+
+  &:focus
+    outline none
+    border-bottom-color $dark-blue
+
+.input-icon
+  display block
+  position absolute
+  top 50%
+  transform translateY(-50%)
+
+  &_left
+    left 0
+
+  &_right
+    right 0
+
+    &:hover
+      cursor pointer
+

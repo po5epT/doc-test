@@ -1,0 +1,23 @@
+<template>
+  <AppIcon :width="12" :height="15">
+    <path
+      d="M11 13.8571L6 10.2857L1 13.8571V2.42857C1 2.04969 1.15051 1.68633 1.41842 1.41842C1.68633 1.15051 2.04969 1 2.42857 1H9.57143C9.95031 1 10.3137 1.15051 10.5816 1.41842C10.8495 1.68633 11 2.04969 11 2.42857V13.8571Z"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </AppIcon>
+</template>
+
+<script>
+import AppIcon from "@/components/icons/AppIcon";
+
+export default {
+  name: "BookmarkIcon",
+
+  components: {
+    AppIcon,
+  },
+};
+</script>
